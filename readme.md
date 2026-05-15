@@ -19,7 +19,7 @@ Trykk på settings, gå til Pages i menyen til venstre og endre deplay til GitHu
 <details>
   <summary>Se skjermbilde</summary>
   
-![Aktiver GitHub pages](/veiledninggithub-pages.webp)
+![Aktiver GitHub pages](/veiledning/github-pages.webp)
 </details>
 
 ## Aktiver actions
