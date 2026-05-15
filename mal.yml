@@ -2,6 +2,20 @@ metadataId: 041f1e6e-bdbc-4091-b48f-8a5990f3cc5b
 output_directory: produktspesifikasjon
 product_slug: admenheter
 updated: 2025-01-01
+metadataId: ea192681-d039-42ec-b1bc-f3ce04c189ac
+output_directory: produktspesifikasjon
+product_slug: N50_kartdata_ea-diagrams-test2
+updated: 2026-05-12
+scopes: 
+   - name: Datamodell for N50 kartdata
+     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N50Kartdata20230401.xml
+     generator: xmi
+     description: Viser full modell for N50 kartdata
+# 
+#ogc_feature_api: https://kos-pygeoapi.atkv3-dev.kartverket.cloud/collections
+#xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/Havnedata_testing.xml
+#include_only_features:
+#  - Uttak
 # 
 #ogc_feature_api: https://kos-pygeoapi.atkv3-dev.kartverket.cloud/collections
 #xmi_url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/Havnedata_testing.xml
