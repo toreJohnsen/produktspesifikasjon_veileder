@@ -1,6 +1,7 @@
 [
   {
     "name": "Spormidt",
+    "package": "FKB-Bane-5.0.1",
     "description": "teoretisk linje midt mellom skinnestrengene",
     "attributes": [
       {
@@ -59,6 +60,7 @@
   },
   {
     "name": "Jernbaneplattformkant",
+    "package": "FKB-Bane-5.0.1",
     "description": "yttergrense av konstruksjon til bruk ved av-/påstigning for passasjerer eller ved av-/pålasting av gods",
     "attributes": [
       {
@@ -95,6 +97,7 @@
   },
   {
     "name": "Fellesegenskaper",
+    "package": "Generelle elementer",
     "description": "abstrakt objekttype som bærer sentrale egenskaper som er anbefalt for bruk i produktspesifikasjoner.",
     "attributes": [
       {
@@ -173,6 +176,7 @@
   },
   {
     "name": "KvalitetPåkrevd",
+    "package": "Generelle elementer",
     "description": "abstrakt objekttype med påkrevet kvalitetsangivelse",
     "attributes": [
       {
