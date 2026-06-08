@@ -86,8 +86,6 @@ Denne veiledningen viser hvordan du:
 
 ---
 
-## ✅ Ferdig
-
 Du har nå:
 - En egen fork av repoet  
 - GitHub Pages aktivert  
@@ -96,27 +94,11 @@ Du har nå:
 
 ---
 
-
 # Bruke løsningen: Generere produktspesifikasjon
 
 Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt opp.
 
----
-
 ## 1️⃣ Fylle inn input-parametere
-
-1. Åpne workflow-filen:
-  
-Her er teksten som ren **GitHub Markdown** du kan kopiere direkte:
-
-```markdown
-# 🚀 Bruke løsningen: Generere produktspesifikasjon
-
-Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt opp.
-
----
-
-## 📄 1️⃣ Fylle inn input-parametere
 
 1. Åpne mal-filen mal.yml:
 
@@ -143,7 +125,7 @@ Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt op
 
 ---
 
-## 🔄 3️⃣ Pull Request opprettes automatisk
+## 3️⃣ Pull Request opprettes automatisk
 
 Når workflowen er ferdig:
 
@@ -154,7 +136,7 @@ Når workflowen er ferdig:
 
 ---
 
-## ✅ 4️⃣ Merge Pull Request
+## 4️⃣ Merge Pull Request
 
 1. Klikk **Merge pull request**
 2. Bekreft med **Confirm merge**
@@ -164,7 +146,7 @@ Når workflowen er ferdig:
 
 ---
 
-## 🎯 Oppsummert
+## Oppsummert
 
 - Oppdater input i `mal.yml`  
 - Kjør workflowen manuelt  
