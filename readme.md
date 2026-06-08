@@ -11,12 +11,19 @@ Denne veiledningen viser hvordan du:
 ## 1️⃣ Lage en fork av repoet
 
 1. Gå til repoet:  
-   https://github.com/Arkitektum/produktspesifikasjon_malkan  
+   https://github.com/Arkitektum/produktspesifikasjon_mal
 2. Klikk **Fork** (øverst til høyre)
 3. Velg din konto eller organisasjon
 4. Vent til kopien er opprettet
 
 ✅ Du har nå din egen fork av repoet
+
+<details>
+  <summary>Se skjermbilder</summary>
+  
+![Lage en ny fork](/veiledning/fork1.png)
+![Lage en ny fork](/veiledning/fork2.png)
+</details>
 
 ---
 
