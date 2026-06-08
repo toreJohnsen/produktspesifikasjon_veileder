@@ -95,3 +95,82 @@ Du har nå:
 - Workflows aktivert  
 
 ---
+
+
+# Bruke løsningen: Generere produktspesifikasjon
+
+Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt opp.
+
+---
+
+## 1️⃣ Fylle inn input-parametere
+
+1. Åpne workflow-filen:
+  
+Her er teksten som ren **GitHub Markdown** du kan kopiere direkte:
+
+```markdown
+# 🚀 Bruke løsningen: Generere produktspesifikasjon
+
+Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt opp.
+
+---
+
+## 📄 1️⃣ Fylle inn input-parametere
+
+1. Åpne mal-filen mal.yml:
+
+2. Finn seksjonen med input-parametere (øverst i filen)
+
+3. Oppdater relevante verdier, for eksempel:
+- metadataId
+- product_slug  
+- updated
+- andre felt definert i malen  
+
+💡 Tips: Verdiene du oppgir her brukes automatisk til å generere produktspesifikasjonen.
+
+---
+
+## 2️⃣ Kjøre workflow
+
+1. Gå til fanen **Actions**
+2. Velg workflow:
+👉 **Generate produktspesifikasjon**
+3. Klikk **Run workflow**
+4. Velg branch (vanligvis `main`)
+5. Klikk **Run workflow**
+
+---
+
+## 🔄 3️⃣ Pull Request opprettes automatisk
+
+Når workflowen er ferdig:
+
+1. Det opprettes automatisk en **Pull Request**
+2. Gå til **Pull requests**
+3. Åpne den nye PR-en
+4. Se gjennom endringene
+
+---
+
+## ✅ 4️⃣ Merge Pull Request
+
+1. Klikk **Merge pull request**
+2. Bekreft med **Confirm merge**
+
+✅ Produktspesifikasjonen er nå oppdatert  
+✅ Endringene publiseres (via GitHub Pages hvis aktivert)
+
+---
+
+## 🎯 Oppsummert
+
+- Oppdater input i `mal.yml`  
+- Kjør workflowen manuelt  
+- Merge Pull Requesten som genereres  
+
+---
+
+🚀 Ferdig! Du har nå generert og publisert en produktspesifikasjon.
+```
