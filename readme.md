@@ -2,6 +2,20 @@
 
 ---
 
+## Innholdsfortegnelse
+
+1. [Sette opp løsningen: Fork, GitHub Pages og GitHub Actions](#sette-opp-løsningen-fork-github-pages-og-github-actions)
+   1. [Lage en fork av repoet](#1️⃣-lage-en-fork-av-repoet)
+   2. [Sett GitHub Pages til å basere seg på "GitHub Actions"](#2️⃣-sett-github-pages-til-å-basere-seg-på-github-actions)
+   3. [Aktivere GitHub Actions](#3️⃣-aktivere-github-actions)
+   4. [Aktivere "Allow GitHub Actions to create and approve pull requests"](#4️⃣-aktivere-allow-github-actions-to-create-and-approve-pull-requests)
+2. [Bruke løsningen: Generere produktspesifikasjon](#bruke-løsningen-generere-produktspesifikasjon)
+   1. [Fylle inn input-parametere](#1️⃣-fylle-inn-input-parametere)
+   2. [Kjøre workflow](#2️⃣-kjøre-workflow)
+   3. [Se gjennom og merge pull request](#3️⃣-se-gigennom-og-merge-pull-request)
+
+---
+
 ## Sette opp løsningen: Fork, GitHub Pages og GitHub Actions
 
 Denne denne av veiledningen viser hvordan du:
@@ -93,8 +107,8 @@ Denne denne av veiledningen viser hvordan du:
 Du har nå:
 - En egen fork av repoet  
 - GitHub Pages er aktivert  
-- GitHub Actions konfigurert med nødvendige rettigheter  
-- Actions/Workflows aktivert for generering av forenklete produktspesifikasjoner
+- GitHub Actions er konfigurert med nødvendige rettigheter  
+- Actions/Workflows er aktivert for generering av forenklete produktspesifikasjoner
 
 ---
 
