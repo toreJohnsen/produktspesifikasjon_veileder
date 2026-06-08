@@ -123,12 +123,26 @@ Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt op
 2. Finn seksjonen med input-parametere (øverst i filen)
 
 3. Oppdater relevante verdier, for eksempel:
-- metadataId
-- product_slug  
-- updated
-- andre felt definert i malen  
+    - metadataId
+    - product_slug  
+    - updated
+    - andre felt definert i malen  
 
 💡 Tips: Verdiene du oppgir her brukes automatisk til å generere produktspesifikasjonen.
+
+#### Eksempel mal.yml
+
+```yaml
+metadataId: ea192681-d039-42ec-b1bc-f3ce04c189ac
+output_directory: produktspesifikasjon
+product_slug: N50_kartdata
+updated: 2026-05-15
+scopes: 
+   - name: Datamodell for N50 kartdata
+     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N50Kartdata20230401.xml
+     generator: xmi
+     description: Viser full modell for N50 kartdata
+```
 
 ---
 
@@ -165,4 +179,4 @@ Du har nå:
 
 ---
 
-Ferdig! Du har nå generert og publisert en forenklet produktspesifikasjon
+Du har nå generert og publisert en forenklet produktspesifikasjon
