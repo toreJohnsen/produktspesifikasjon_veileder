@@ -1,4 +1,4 @@
-# 🧭 Guide: Fork, GitHub Pages og GitHub Actions
+# Guide: Fork, GitHub Pages og GitHub Actions
 
 Denne veiledningen viser hvordan du:
 1. Lager en fork av repoet  
@@ -27,13 +27,13 @@ Denne veiledningen viser hvordan du:
 
 ---
 
-## 2️⃣ Sette GitHub Pages til "Deploy from branch"
+## 2️⃣ Sette GitHub Pages til "GitHub Actions"
 
 1. Gå til din fork
 2. Klikk **Settings**
 3. Velg **Pages** i menyen til venstre
 4. Under **Build and deployment**:
-   - Source: **GitHub**
+   - Source: **GitHub Actions**
 5. Klikk **Save**
 
 ✅ GitHub Pages er nå konfigurert
@@ -95,5 +95,3 @@ Du har nå:
 - Workflows aktivert  
 
 ---
-
-🚀 Tips: Når du gjør endringer i repoet, kan de automatisk deployes via GitHub Actions og bli synlige på GitHub Pages.
