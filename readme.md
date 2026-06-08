@@ -118,19 +118,15 @@ Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt op
 
 ### 1️⃣ Fylle inn input-parametere
 
-1. Åpne mal-filen mal.yml:
+1. Åpne mal-filen mal.yml
 
-2. Finn seksjonen med input-parametere (øverst i filen)
+2. Oppdater input parameterene:
+    - metadataId (id'en fra kartkatalog.geonorge.no)
+    - product_slug (kortnavn for produktet)
+    - updated (dato)
+    - scopes (se eksempler under)
 
-3. Oppdater relevante verdier, for eksempel:
-    - metadataId
-    - product_slug  
-    - updated
-    - andre felt definert i malen  
-
-💡 Tips: Verdiene du oppgir her brukes til å generere produktspesifikasjonen.
-
-#### Eksempel mal.yml - xmi fra sosi-modellregister
+#### Eksempel - xmi fra sosi-modellregister
 
 ```yaml
 metadataId: 041f1e6e-bdbc-4091-b48f-8a5990f3cc5b
@@ -144,7 +140,7 @@ scopes:
     description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
 ```
 
-#### Eksempel mal.yml - ogc-api
+#### Eksempel - ogc-api
 
 ```yaml
 metadataId: 041f1e6e-bdbc-4091-b48f-8a5990f3cc5b
@@ -158,7 +154,7 @@ scopes:
     description: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 ```
 
-#### Eksempel mal.yml - xmi fra sosi-modellregister og ogc-api (to scopes)
+#### Eksempel - xmi fra sosi-modellregister og ogc-api (to scopes)
 
 ```yaml
 metadataId: 041f1e6e-bdbc-4091-b48f-8a5990f3cc5b
@@ -175,6 +171,8 @@ scopes:
     generator: ogc_feature_api
     description: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 ```
+
+💡 Tip: Du kan legge til flere scopes!
 
 ---
 
@@ -211,4 +209,5 @@ Du har nå:
 
 ---
 
-Du har nå generert og publisert en forenklet produktspesifikasjon
+💡 Tip: Stien til publisert produktspesifikasjon finner du inne på **Actions**.
+   Hvis stien til repoet ditt er https://github.com/toreJohnsen/produktspesifikasjon_mal vil stien til GitHub Pages være https://torejohnsen.github.io/produktspesifikasjon_mal/
