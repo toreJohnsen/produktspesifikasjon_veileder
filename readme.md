@@ -1,14 +1,18 @@
-# Guide: Fork, GitHub Pages og GitHub Actions
-
-Denne veiledningen viser hvordan du:
-1. Lager en fork av repoet  
-2. Setter opp GitHub Pages  
-3. Gir riktige rettigheter til GitHub Actions  
-4. Aktiverer GitHub Actions  
+# Guide: Sette opp og bruke løsningen
 
 ---
 
-## 1️⃣ Lage en fork av repoet
+## Sette opp løsningen: Fork, GitHub Pages og GitHub Actions
+
+Denne denne av veiledningen viser hvordan du:
+1. Lager en fork av mal-repoet  
+2. Setter opp GitHub Pages  
+3. Aktiverer GitHub Actions   
+4. Gir nødvendige rettigheter til GitHub Actions 
+
+---
+
+### 1️⃣ Lage en fork av repoet
 
 1. Gå til repoet:  
    https://github.com/Arkitektum/produktspesifikasjon_mal
@@ -27,7 +31,7 @@ Denne veiledningen viser hvordan du:
 
 ---
 
-## 2️⃣ Sette GitHub Pages til "GitHub Actions"
+### 2️⃣ Sett GitHub Pages til å basere seg på "GitHub Actions"
 
 1. Gå til din fork
 2. Klikk **Settings**
@@ -48,7 +52,7 @@ Denne veiledningen viser hvordan du:
 
 ---
 
-## 3️⃣ Aktivere GitHub Actions
+### 3️⃣ Aktivere GitHub Actions
 
 1. Gå til fanen **Actions**
 2. Klikk **Enable / I understand my workflows**
@@ -64,7 +68,7 @@ Denne veiledningen viser hvordan du:
 
 ---
 
-## 4️⃣ Aktivere “Allow GitHub Actions to create and approve pull requests”
+### 4️⃣ Aktivere “Allow GitHub Actions to create and approve pull requests”
 
 1. Gå til **Settings**
 2. Velg **Actions → General**
@@ -88,17 +92,17 @@ Denne veiledningen viser hvordan du:
 
 Du har nå:
 - En egen fork av repoet  
-- GitHub Pages aktivert  
-- GitHub Actions konfigurert med riktige rettigheter  
-- Workflows aktivert  
+- GitHub Pages er aktivert  
+- GitHub Actions konfigurert med nødvendige rettigheter  
+- Actions/Workflows aktivert  
 
 ---
 
-# Bruke løsningen: Generere produktspesifikasjon
+## Bruke løsningen: Generere produktspesifikasjon
 
 Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt opp.
 
-## 1️⃣ Fylle inn input-parametere
+### 1️⃣ Fylle inn input-parametere
 
 1. Åpne mal-filen mal.yml:
 
@@ -114,39 +118,33 @@ Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt op
 
 ---
 
-## 2️⃣ Kjøre workflow
+### 2️⃣ Kjøre workflow
 
 1. Gå til fanen **Actions**
-2. Velg workflow:
-👉 **Generate produktspesifikasjon**
+2. Velg workflow: **Generate produktspesifikasjon**
 3. Klikk **Run workflow**
 4. Velg branch (vanligvis `main`)
 5. Klikk **Run workflow**
 
 ---
 
-## 3️⃣ Pull Request opprettes automatisk
+### 3️⃣ Se gjennom og merge pull request 4️⃣
 
-Når workflowen er ferdig:
+Når workflowen har kjørt ferdig:
 
 1. Det opprettes automatisk en **Pull Request**
 2. Gå til **Pull requests**
 3. Åpne den nye PR-en
 4. Se gjennom endringene
-
----
-
-## 4️⃣ Merge Pull Request
-
-1. Klikk **Merge pull request**
-2. Bekreft med **Confirm merge**
+5. Klikk **Merge pull request**
+6. Bekreft med **Confirm merge**
 
 ✅ Produktspesifikasjonen er nå oppdatert  
-✅ Endringene publiseres (via GitHub Pages hvis aktivert)
+✅ Endringene publiseres til GitHub pages
 
 ---
 
-## Oppsummert
+### Oppsummert
 
 - Oppdater input i `mal.yml`  
 - Kjør workflowen manuelt  
