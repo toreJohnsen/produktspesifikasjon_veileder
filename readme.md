@@ -158,11 +158,10 @@ Når workflowen har kjørt ferdig:
 
 ---
 
-### Oppsummert
-
-- Oppdater input i `mal.yml`  
-- Kjør workflowen manuelt  
-- Merge Pull Requesten som genereres  
+Du har nå:
+- Oppdatert input parameterene i `mal.yml`
+- Kjørt workflowen manuelt som generer produktspesifikasjonen
+- Merget Pull Requesten som inneholder produktspesifikasjonen, og blir publisert via GitHub Pages
 
 ---
 
