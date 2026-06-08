@@ -42,8 +42,8 @@ Denne veiledningen viser hvordan du:
   <summary>Se skjermbilder</summary>
   
 ![Klikk settings](/veiledning/settings.png)
-![Lage en ny fork](/veiledning/pages1.png)
-![Lage en ny fork](/veiledning/pages2.png)
+![Klikk Pages](/veiledning/pages1.png)
+![Velg source GitHub Actions](/veiledning/pages2.png)
 </details>
 
 ---
