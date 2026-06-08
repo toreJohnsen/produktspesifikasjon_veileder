@@ -33,16 +33,38 @@ Denne veiledningen viser hvordan du:
 2. Klikk **Settings**
 3. Velg **Pages** i menyen til venstre
 4. Under **Build and deployment**:
-   - Source: **Deploy from a branch**
-   - Branch: `main` (eller `gh-pages` hvis aktuelt)
-   - Folder: `/ (root)`
+   - Source: **GitHub**
 5. Klikk **Save**
 
 ✅ GitHub Pages er nå konfigurert
 
+<details>
+  <summary>Se skjermbilder</summary>
+  
+![Klikk settings](/veiledning/settings.png)
+![Lage en ny fork](/veiledning/pages1.png)
+![Lage en ny fork](/veiledning/pages2.png)
+</details>
+
 ---
 
-## 3️⃣ Aktivere “Allow GitHub Actions to create and approve pull requests”
+## 3️⃣ Aktivere GitHub Actions
+
+1. Gå til fanen **Actions**
+2. Klikk **Enable / I understand my workflows**
+
+✅ GitHub Actions er nå aktivert
+
+<details>
+  <summary>Se skjermbilder</summary>
+  
+![Klikk settings](/veiledning/actions1.png)
+![Lage en ny fork](/veiledning/enableactions.png)
+</details>
+
+---
+
+## 4️⃣ Aktivere “Allow GitHub Actions to create and approve pull requests”
 
 1. Gå til **Settings**
 2. Velg **Actions → General**
@@ -54,20 +76,13 @@ Denne veiledningen viser hvordan du:
 
 ✅ GitHub Actions har nå nødvendige rettigheter
 
----
-
-## 4️⃣ Aktivere GitHub Actions
-
-### Alternativ A (første gang)
-1. Gå til fanen **Actions**
-2. Klikk **Enable / I understand my workflows**
-
-### Alternativ B
-1. Gå til **Settings → Actions → General**
-2. Under **Actions permissions**:
-   - Velg ✅ **Allow all actions and reusable workflows**
-
-✅ GitHub Actions er nå aktivert
+<details>
+  <summary>Se skjermbilder</summary>
+  
+![Klikk settings](/veiledning/settings.png)
+![Velg General under Actions](/veiledning/actions2.png)
+![Allow GitHub Actions to create and approve pull requests](/veiledning/actions3.png)
+</details>
 
 ---
 
