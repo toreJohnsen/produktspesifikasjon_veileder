@@ -166,5 +166,4 @@ Når workflowen har kjørt ferdig:
 
 ---
 
-🚀 Ferdig! Du har nå generert og publisert en produktspesifikasjon.
-```
+Ferdig! Du har nå generert og publisert en forenklet produktspesifikasjon
