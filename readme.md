@@ -2,17 +2,17 @@
 
 ---
 
-## Innholdsfortegnelse
+## Innhold
 
 1. [Sette opp løsningen: Fork, GitHub Pages og GitHub Actions](#sette-opp-løsningen-fork-github-pages-og-github-actions)
    1. [Lage en fork av repoet](#1️⃣-lage-en-fork-av-repoet)
    2. [Sett GitHub Pages til å basere seg på "GitHub Actions"](#2️⃣-sett-github-pages-til-å-basere-seg-på-github-actions)
-   3. [Aktivere GitHub Actions](#3️⃣-aktivere-github-actions)
-   4. [Aktivere "Allow GitHub Actions to create and approve pull requests"](#4️⃣-aktivere-allow-github-actions-to-create-and-approve-pull-requests)
+   3. [Aktiver GitHub Actions](#3️⃣-aktiver-github-actions)
+   4. [Gi nødvendige rettigheter til GitHub Actions](#4️⃣-gi-nødvendige-rettigheter-til-github-actions)
 2. [Bruke løsningen: Generere produktspesifikasjon](#bruke-løsningen-generere-produktspesifikasjon)
    1. [Fylle inn input-parametere](#1️⃣-fylle-inn-input-parametere)
    2. [Kjøre workflow](#2️⃣-kjøre-workflow)
-   3. [Se gjennom og merge pull request](#3️⃣-se-gigennom-og-merge-pull-request)
+   3. [Se gjennom og merge pull request](#3️⃣-se-gjennom-og-merge-pull-request)
 
 ---
 
@@ -28,10 +28,10 @@ Denne denne av veiledningen viser hvordan du:
 
 ### 1️⃣ Lage en fork av repoet
 
-1. Gå til repoet:  
+1. Gå til mal-repoet:  
    https://github.com/Arkitektum/produktspesifikasjon_mal
 2. Klikk **Fork** (øverst til høyre)
-3. Velg din konto eller organisasjon
+3. Velg å legge forken på din egen konto eller under din organisasjon
 4. Vent til kopien er opprettet
 
 ✅ Du har nå din egen fork av repoet
@@ -66,7 +66,7 @@ Denne denne av veiledningen viser hvordan du:
 
 ---
 
-### 3️⃣ Aktivere GitHub Actions
+### 3️⃣ Aktiver GitHub Actions
 
 1. Gå til fanen **Actions**
 2. Klikk **Enable / I understand my workflows**
@@ -82,7 +82,7 @@ Denne denne av veiledningen viser hvordan du:
 
 ---
 
-### 4️⃣ Aktivere “Allow GitHub Actions to create and approve pull requests”
+### 4️⃣ Gi nødvendige rettigheter til GitHub Actions
 
 1. Gå til **Settings**
 2. Velg **Actions → General**
@@ -128,20 +128,52 @@ Denne veiledningen viser hvordan du bruker løsningen etter at repoet er satt op
     - updated
     - andre felt definert i malen  
 
-💡 Tips: Verdiene du oppgir her brukes automatisk til å generere produktspesifikasjonen.
+💡 Tips: Verdiene du oppgir her brukes til å generere produktspesifikasjonen.
 
-#### Eksempel mal.yml
+#### Eksempel mal.yml - xmi fra sosi-modellregister
 
 ```yaml
-metadataId: ea192681-d039-42ec-b1bc-f3ce04c189ac
+metadataId: 041f1e6e-bdbc-4091-b48f-8a5990f3cc5b
 output_directory: produktspesifikasjon
-product_slug: N50_kartdata
-updated: 2026-05-15
+product_slug: admenheter
+updated: 2026-06-01
 scopes: 
-   - name: Datamodell for N50 kartdata
-     url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Statens kartverk/N50Kartdata20230401.xml
-     generator: xmi
-     description: Viser full modell for N50 kartdata
+  - name: datafangst
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Kommunal- og moderniseringsdepartementet/Arealplan/Arealplan 5.0/PlanleggingIgangsatt.xml
+    generator: xmi
+    description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
+```
+
+#### Eksempel mal.yml - ogc-api
+
+```yaml
+metadataId: 041f1e6e-bdbc-4091-b48f-8a5990f3cc5b
+output_directory: produktspesifikasjon
+product_slug: admenheter
+updated: 2026-06-01
+scopes: 
+  - name: innsynstjeneste
+    url: https://plandata.ft.dibk.no/services/planleggingigangsatt/collections
+    generator: ogc_feature_api
+    description: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
+```
+
+#### Eksempel mal.yml - xmi fra sosi-modellregister og ogc-api (to scopes)
+
+```yaml
+metadataId: 041f1e6e-bdbc-4091-b48f-8a5990f3cc5b
+output_directory: produktspesifikasjon
+product_slug: admenheter
+updated: 2026-06-01
+scopes: 
+  - name: datafangst
+    url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Kommunal- og moderniseringsdepartementet/Arealplan/Arealplan 5.0/PlanleggingIgangsatt.xml
+    generator: xmi
+    description: Datamodellen brukes for å legge ved gml filer for planområdet som brukes i tjenesten for varsel om planoppstart.
+  - name: innsynstjeneste
+    url: https://plandata.ft.dibk.no/services/planleggingigangsatt/collections
+    generator: ogc_feature_api
+    description: Tjeneste for innsyn i planområder som er varslet for planlegging igangsatt.
 ```
 
 ---
@@ -156,7 +188,7 @@ scopes:
 
 ---
 
-### 3️⃣ Se gjennom og merge pull request 4️⃣
+### 3️⃣ Se gjennom og merge pull request
 
 Når workflowen har kjørt ferdig:
 
