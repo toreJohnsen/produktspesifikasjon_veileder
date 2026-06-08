@@ -94,7 +94,7 @@ Du har nå:
 - En egen fork av repoet  
 - GitHub Pages er aktivert  
 - GitHub Actions konfigurert med nødvendige rettigheter  
-- Actions/Workflows aktivert  
+- Actions/Workflows aktivert for generering av forenklete produktspesifikasjoner
 
 ---
 
